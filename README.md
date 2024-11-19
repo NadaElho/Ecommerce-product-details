@@ -1,27 +1,53 @@
-# ECommerceProductPage
+# Frontend Mentor - E-commerce product page solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshot
 
-## Running end-to-end tests
+![Macbook-Air-product-details-two vercel app](https://github.com/user-attachments/assets/c7f84c0d-2eea-464c-88a4-e06f1d508e80)
+![Macbook-Air-product-details-two vercel app (1)](https://github.com/user-attachments/assets/f0d9f2ff-48d3-4e2a-93f9-f422ba495046)
+![iPhone-14-Plus-product-details-two vercel app](https://github.com/user-attachments/assets/b88aa529-6c26-4e3a-9ab3-8e530225e44f)
+![iPhone-14-Plus-product-details-two vercel app (2)](https://github.com/user-attachments/assets/e1df696c-7e7a-4bc4-bfba-7fa26614565d)
+![iPhone-14-Plus-product-details-two vercel app (1)](https://github.com/user-attachments/assets/a8a4f04b-1d0a-4b42-94b5-17d4c7357ead)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+### Links
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Solution URL](https://github.com/NadaElho/Edommerce-product-details)
+- [Live site URL](https://product-details-two.vercel.app/)
+
+## My process
+
+### Built with
+
+- Angular
+- CSS custom properties
+- Flexbox
+
+## Author
+- Frontend Mentor - [Nada Elhosary](https://www.frontendmentor.io/profile/NadaElho)
+
