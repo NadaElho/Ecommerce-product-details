@@ -1,0 +1,26 @@
+<div class="details">
+  <h2>Sneaker company</h2>
+  <h1>{{ productData.name }}</h1>
+  <p>{{ productData.description }}.</p>
+  <div class="prices">
+    <div class="discount-price">
+      <div class="price">
+        {{
+          productData.price - (productData.price / 100) * productData.discount
+        }}$
+      </div>
+      <div class="discount">{{ productData.discount }}%</div>
+    </div>
+    <div class="before-discount">{{ productData.price }}$</div>
+  </div>
+  <div class="actions">
+    <div class="count">
+      <img src="assets/images/icon-minus.svg" alt="" (click)="onDecrement()" />
+      <span>{{ numOfProducts() }}</span>
+      <img src="assets/images/icon-plus.svg" alt="" (click)="onIncrement()" />
+    </div>
+    <div class="button" (click)="addToCart()" [ngClass]="{disabled: numOfProducts() === 0}">
+      <img src="assets/images/icon-cart.svg" alt="" /> <span>Add to cart</span>
+    </div>
+  </div>
+</div>

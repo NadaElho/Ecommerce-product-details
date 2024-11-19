@@ -1,0 +1,47 @@
+<nav>
+  <div class="left">
+    <div class="logo">
+      <img
+        src="assets/images/icon-menu.svg"
+        alt=""
+        (click)="toggleNav()"
+        class="menu"
+      />
+      <img src="assets/images/logo.svg" alt="" />
+    </div>
+    <div class="overlay" [ngClass]="{ activeNav: activeNav }"></div>
+    <div class="nav-items" [ngClass]="{ activeNav: activeNav }">
+      <img src="assets/images/icon-close.svg" alt="" (click)="toggleNav()" />
+
+      <ul>
+        <li class="active">Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+  <div class="icons">
+    <div>
+      <span>{{ cartItems() }}</span>
+      <img src="assets/images/icon-cart.svg" alt="" />
+    </div>
+    <div class="img" [ngClass]="{ active: activeCart }">
+      <img
+        src="assets/images/image-avatar.png"
+        alt="avatar"
+        class="avatar"
+        (click)="toggleCart()"
+      />
+    </div>
+    @if(activeCart){
+    <div class="cart">
+      <app-cart
+        (itemRemoved)="removeFromCart($event)"
+        [cartNumber]="cartNumber()"
+      />
+    </div>
+    }
+  </div>
+</nav>

@@ -1,0 +1,20 @@
+<div class="cart-item">
+  <img
+    [src]="'assets/images/image-product-' + cartItem()!.id + '-thumbnail.jpg'"
+    alt=""
+    class="product-img"
+  />
+  <div>
+    <h6>{{ productData!.name }}</h6>
+    <div>
+      ${{ productData?.price }} x {{ cartItem()!.count }}
+      <span>${{ productData!.price * cartItem()!.count }}</span>
+    </div>
+  </div>
+  <img
+    src="assets/images/icon-delete.svg"
+    alt=""
+    class="delete"
+    (click)="removeFromCart(productData!.id)"
+  />
+</div>

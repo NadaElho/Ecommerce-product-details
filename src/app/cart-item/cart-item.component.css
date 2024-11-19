@@ -1,0 +1,32 @@
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 5px;
+    color: hsl(219, 9%, 45%);
+    font-size: 14px;
+}
+
+img.product-img{
+    width: 50px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+span{
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+
+img.delete{
+    cursor: pointer;
+}
+
+h6{
+    font-size: 14px;
+    font-weight: 400;
+}

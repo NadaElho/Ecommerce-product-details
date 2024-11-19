@@ -1,0 +1,10 @@
+<div class="overlay">
+  <div class="close">
+    <img src="assets/images/icon-close.svg" alt="" (click)="onClose()" />
+  </div>
+  <app-image-container
+    (changeNum)="handleData($event)"
+    [activeImageNum]="activeImageNum()"
+    [isActive]="isActive()"
+  />
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+  @if(active){
+  <app-pop-up
+    (close)="onChange($event)"
+    [activeImageNum]="activeImageNumber()"
+    (changeNum)="handleData($event)"
+    [isActive]="active"
+  />
+  }
+  <app-navbar [cartNumber]="cart()" (itemRemoved)="removeFromCart()"/>
+  <hr />
+  <div class="details">
+    <div>
+      <app-image-container
+        (active)="onChange($event)"
+        [activeImageNum]="activeImageNumber()"
+        (changeNum)="handleData($event)"
+        [isActive]="active"
+      />
+    </div>
+    <div>
+      <app-product-dtails
+        (cart)="addToCart($event)"
+        [activeImageNum]="activeImageNumber()"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container{
+    padding: 0 120px;
+}
+
+hr{
+    color: hsl(220, 14%, 75%);
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.details > div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+@media (max-width: 1100px) {
+    .container{
+        padding: 0 70px;
+    }
+    .details{
+        flex-direction: column;
+    }  
+}
